@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+    
+    body {
+        background-image: url(https://images.unsplash.com/photo-1547104442-044448b73426?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+    
+    h1,h2 {
+        color: #333;
+    }
+    
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .btn-primary {
+        background-color: #000000;
+        border-color: #d9b813;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .btn-primary:hover {
+        background-color: #d9b813;
+        border-color: #d9b813;
+    }
+
+    .degree-photo {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .filmitem {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .filmphoto {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+
+    .filmtext {
+        flex: 1;
+    }
+    
+    #education ul {
+        list-style: none;
+        padding: 20px;
+        margin: 0;
+    }
+
+    #education li {
+        margin-bottom: 20px;
+    }
+    #education h3 {
+        margin-top: 0;
+    }
+
+    .eduitem {
+        margin-bottom: 20px;
+    }
+
+    .edubox {
+        background-color: #9d98982a;
+        padding: 20px;
+        border: 3px solid #0000001c;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex; 
+        align-items: center; 
+    }   
+
+    .edufoto {
+        width: 100px; 
+        height: 100px; 
+        margin-right: 20px; 
+        border-radius: 50%; 
+    }
+
+    .btn-loading {
+        background-color: #d9b813;
+        cursor: not-allowed;
+    }
+
+    .error {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    #success-message {
+        color: green;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: #d9b813;">Ipang</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" style="color: #d9b813;">Laman <span class="sr-only">(Sekarang)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #d9b813;">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #d9b813;">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #d9b813;">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <h1>Irfan Priyo Putranto</h1>
+                    <p>Selamat Pagi, Siang, dan Malam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-5 mt-md-0">
+                    <h2>Tentang Saya</h2>
+                    <p>Sebagai pribadi yang terbentuk melalui pelatihan intensif di Paskibraka, saya membawa rasa disiplin dan loyalitas yang kuat dalam seluruh aspek kehidupan saya, terutama  lingkungan kerja saya.
+                        Pengalaman ini tidak hanya membentuk pendekatan saya terhadap pekerjaan dan tanggung jawab, namun juga mengajarkan saya pentingnya kolaborasi dan saling menghormati dalam sebuah tim.
+                        Saya selalu menghargai sikap positif, bekerja secara efektif dan efisien, serta berpikir kritis dalam menghadapi berbagai situasi untuk memastikan setiap tugas diselesaikan dengan hasil yang optimal.
+                        Nilai-nilai ini mendasari segala sesuatu yang saya lakukan untuk mencapai tujuan pribadi saya dan memberikan kontribusi positif terhadap lingkungan kerja.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-5 mt-md-0">
+                    <h2>Edukasi</h2>
+                </div>
+                <div class="col-md-12">
+                    <ul>
+                        <li>
+                            <div class="eduitem">
+                                <div class="edubox">
+                                    <img src="https://upload.wikimedia.org/wikipedia/id/thumb/0/01/Institut_Teknologi_Sepuluh_Nopember_seal.svg/1200px-Institut_Teknologi_Sepuluh_Nopember_seal.svg.png" class="edufoto">
+                                    <h3>Institut Teknologi Sepuluh Nopember</h3>
+                                    <p>2023 - Sekarang</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eduitem">
+                                <div class="edubox">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGqrDvHzq_pp9QHE8N-w8G-DpPEBCID4JxLA&s" class="edufoto">
+                                    <h3>SMA Negeri 8 Malang</h3>
+                                    <p>2020 - 2023</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eduitem">
+                                <div class="edubox">
+                                    <img src="https://yt3.googleusercontent.com/jvTwdWS_uU51ISFQTRLGwOvaAYW1cNEaD6F-w8Buh9Wypf1oTDAysybAtEM-VHz_qa_3dHonrQ=s900-c-k-c0x00ffffff-no-rj" class="edufoto">
+                                    <h3>SMP Negeri 8 Malang</h3>
+                                    <p>2017 - 2020</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li></li>
+                            <div class="eduitem">
+                                <div class="edubox">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4FShEcR125X7oAtwUOuMA7myU4zpQkOhqQ&s" class="edufoto">
+                                    <h3>SD Negeri Percobaan 1 Malang</h3>
+                                    <p>2011 - 2017</p>
+                                    </div>
+                                    
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-5 mt-md-0">
+                    <h2>All Times Favorite</h2>
+                </div>
+                <div class="col-md-12">
+                    <ul>
+                        <li>
+                            <div class="filmitem">
+                                <img src="https://cdn.myanimelist.net/images/anime/5/75639.jpg" class="img-fluid filmphoto" style="width: 150px;">
+                                <div class="filmtext">
+                                    <h3>ASSASSINATION CLASSROOM</h3>
+                                    <p>Assassination Classroom adalah salah satu anime dan manga yang cukup unik dan menarik karena menggabungkan elemen 
+                                        aksi, komedi, dan drama dalam satu cerita. Apa yang saya suka dari serial ini adalah pengembangan karakternya. Meskipun pada 
+                                        awalnya ada banyak karakter, setiap karakter mendapatkan momen mereka tersendiri. Akhir dari Assassination Classroom merupakan 
+                                        salah satu yang paling emosional dan memuaskan bagi saya. Penutupannya menekankan pentingnya penerimaan dan melepaskan orang 
+                                        yang disayangi.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filmitem">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKASB9maQglrDflg9hoNaQDGh7sNBIOeMAVQ&s" class="img-fluid filmphoto">
+                                <div class="filmtext">
+                                    <h3>3 IDIOT</h3>
+                                    <p>Salah satu aspek paling kuat yang saya rasakan dari film 3 Idiots adalah kritiknya terhadap sistem pendidikan yang sangat kompetitif 
+                                        dan berbasis nilai yang luar biasa keras. Film ini menyoroti bagaimana tekanan untuk meraih nilai tinggi dan mengikuti jalur karier 
+                                        yang sudah ditentukan dapat menghancurkan impian dan kebahagiaan individu. Selain pesan moral yang terkandung pada film ini,Komedi 
+                                        dan soundtrack dari film inilah yang membuat saya tidak pernah bosan untuk menontonnya berkali-kali.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filmitem">
+                                <img src="https://upload.wikimedia.org/wikipedia/id/f/f9/5_cm_%28poster%29.jpg" class="img-fluid filmphoto">
+                                <div class="filmtext">
+                                    <h3>5 CENTIMETERS</h3>
+                                    <p>Film ini menceritakan tentang lima sahabat yang memutuskan untuk melakukan pendakian ke Gunung Semeru setelah sekian lama 
+                                        tidak bertemu. Melalui perjalanan ini, mereka belajar tentang arti persahabatan sejati, kebersamaan, dan bagaimana menghadapi 
+                                        tantangan bersama. Akhir dari film 5 cm memberikan saya rasa puas dan inspirasi. Film ini mengajarkan saya bahwa impian harus 
+                                        selalu dipegang teguh, tetapi juga perlu diikuti dengan tindakan nyata dan keberanian untuk mengatasi segala rintangan.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact"></section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <h2>Hubungi Saya</h2>
+                    <p>• <a href="https://wa.me/6281232727206">0812-3272-7206</a> <br>• irfan.priyo05@gmail.com <br>• @irf_priyo</p>
+                </div>
+                <div class="col-md-6">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                            <div class="error" id="name-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                            <div class="error" id="email-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea class="form-control" id="message" name="message"></textarea>
+                            <div class="error" id="message-error"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">Kirim</button>
+                        <div id="success-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="live-update">
+        <div class="container">
+            <h2>Live Update</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" id="live-input">
+            </div>
+        </div>
+    </section>
+
+    <section id="live-update">
+        <div class="container">
+            <h2>Live Output</h2>
+            <div class="form-group">
+                <p class="form-control"><span id="live-output"></span></p>
+            </div>
+        </div>
+    </section>   
+    <script src="tugas3.js"></script>     
+</body>
+</html>
